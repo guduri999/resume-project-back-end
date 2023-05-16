@@ -1,2 +1,5 @@
 # resume-project-back-end
- deepaks project
+
+if you want to run this project first clone this and run  npm i  after that npm run dev 
+
+deepaks project
