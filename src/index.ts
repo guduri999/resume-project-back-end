@@ -1,6 +1,7 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 
+const port: any = process.env.PORT || 8000;
 const typeDefs = `type Query{
     hello:String
 }`;
@@ -18,6 +19,6 @@ const server = new ApolloServer({
   resolvers,
 });
 
-startStandaloneServer(server, { listen: { port: 7000 } }).then((data) =>
+startStandaloneServer(server, { listen: { port } }).then((data) =>
   console.log(data.url)
 );
