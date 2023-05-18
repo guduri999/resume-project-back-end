@@ -1,3 +1,4 @@
+import { Profile } from "../database/models";
 
 // const hello: any = "asfasf"
 export const resolvers = {
@@ -28,11 +29,12 @@ export const resolvers = {
   },
   Mutation: {
 
-    createStudent: async (input: string) => {
+    ProfileCreation: async (one: string, two: string) => {
 
-      await console.log(input, "testing")
+      const result = await Profile.create(two)
 
-      return input
+      return result;
+
     }
   }
 };

@@ -6,7 +6,11 @@ type Query{
     education:[education]
 }
 type Mutation{
-    createStudent(input:String!):String
+    ProfileCreation(name:String,email:String):profile
+}
+type profile{
+    name:String
+    email:String
 }
 type resumeProfile{
     name:String
