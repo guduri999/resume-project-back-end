@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/index.ts",
-    "start": "node ./dist/index.ts"
+    "start": "node ./dist/index.ts",
+    "generate": "graphql-codegen"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
   "dependencies": {
     "@apollo/server": "^4.7.1",
     "@graphql-codegen/cli": "^3.3.1",
+    "@graphql-codegen/typescript-operations": "^3.0.4",
     "config": "^3.3.9",
     "graphql": "^16.6.0",
     "mongoose": "^7.1.1"

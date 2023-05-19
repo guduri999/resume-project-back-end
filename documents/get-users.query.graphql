@@ -1,0 +1,15 @@
+# query getUsers {
+#   User {
+#     id
+#     name
+#     email
+#   }
+# }
+
+query  testing {
+  getUsers{
+    id
+  name
+  email
+  }
+}
